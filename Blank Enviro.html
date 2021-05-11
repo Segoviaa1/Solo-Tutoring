@@ -166,27 +166,52 @@
 <a class="prev" onclick="currentSlide(5) ; pause()">&#10094;</a>
 <a class="next" onclick="currentSlide(3) ; pause()">&#10095;</a>
 </div>
+ 
+ <div class="mySlides ; fadein">
+   <p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">My son worked with Andy during his sophomore year in high school.
+At that time, he was having difficulty with both Geometry and Chemistry.
+Andy worked with my son every week for the entire school year.
+Andy has a talent for explaining difficult subjects.  He uses various approaches
+until he finds the correct path for that student. By building each week on the previous lesson,
+Andy is able to simplify challenging concepts.
+ 
+Needless to say – my son passed both courses with flying colors.</p> 
+<a class="prev" onclick="currentSlide(1) ; pause()">&#10094;</a>
+<a class="next" onclick="currentSlide(5) ; pause()">&#10095;</a>
+</div>
+  <div class="mySlides ; fadeout">
+<p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">My son worked with Andy during his sophomore year in high school.
+At that time, he was having difficulty with both Geometry and Chemistry.
+Andy worked with my son every week for the entire school year.
+Andy has a talent for explaining difficult subjects.  He uses various approaches
+until he finds the correct path for that student. By building each week on the previous lesson,
+Andy is able to simplify challenging concepts.
+ 
+Needless to say – my son passed both courses with flying colors.</p> 
+   <a class="prev" onclick="currentSlide(1) ; pause()">&#10094;</a>
+<a class="next" onclick="currentSlide(5) ; pause()">&#10095;</a>
+</div>
 
 <div class="mySlides ; fadein">
   <p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">Drew did everything he could to ensure that we would have the best tutoring session possible, despite the virtual format. He was incredibly knowledgeable, patient, and helpful. He answered all of my questions with ease and was able to explain them in a very accessible way. He was an incredible tutor and I gained very valuable knowledge from our session. <br/><br/>- Matthew S. Pre Calculus</p> 
- <a class="prev" onclick="currentSlide(1) ; pause()">&#10094;</a>
-<a class="next" onclick="currentSlide(5) ; pause()">&#10095;</a>
+ <a class="prev" onclick="currentSlide(3) ; pause()">&#10094;</a>
+<a class="next" onclick="currentSlide(7) ; pause()">&#10095;</a>
 </div>
 <div class="mySlides ; fadeout">
   <p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">Drew did everything he could to ensure that we would have the best tutoring session possible, despite the virtual format. He was incredibly knowledgeable, patient, and helpful. He answered all of my questions with ease and was able to explain them in a very accessible way. He was an incredible tutor and I gained very valuable knowledge from our session. <br/><br/>- Matthew S. Pre Calculus</p>
-     <a class="prev" onclick="currentSlide(1) ; pause()">&#10094;</a>
-<a class="next" onclick="currentSlide(5) ; pause()">&#10095;</a>
+     <a class="prev" onclick="currentSlide(3) ; pause()">&#10094;</a>
+<a class="next" onclick="currentSlide(7) ; pause()">&#10095;</a>
   </div>
 
 <div class="mySlides ; fadein">
   <p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">Solo does a great job taking advantage of the Zoom features to make sure that our sessions work online. Seeing words and pictures appear on the screen and me being able to write and draw back helps me understand a lot better.<br/><br/>- Rohit K. Aged 11</p>
-     <a class="prev" onclick="currentSlide(3) ; pause()">&#10094;</a>
+     <a class="prev" onclick="currentSlide(5) ; pause()">&#10094;</a>
 <a class="next" onclick="currentSlide(1) ; pause()">&#10095;</a> 
   </div>
 <div class="mySlides ; fadeout">
    <p style ="font-family:Avenir Light;text-align:center ;margin-bottom:5px ; font-size: 20px">Solo does a great job taking advantage of the Zoom features to make sure that our sessions work online. Seeing words and pictures appear on the screen and me being able to write and draw back helps me understand a lot better.<br/><br/>- Rohit K. Aged 11
    </p> 
-      <a class="prev" onclick="currentSlide(3) ; pause()">&#10094;</a>
+      <a class="prev" onclick="currentSlide(5) ; pause()">&#10094;</a>
 <a class="next" onclick="currentSlide(1) ; pause()">&#10095;</a>
   </div>
 
@@ -196,6 +221,7 @@
   <span class="dot" onclick="currentSlide(1) ; pause()"></span> 
   <span class="dot" onclick="currentSlide(3) ; pause()"></span> 
   <span class="dot" onclick="currentSlide(5) ; pause()"></span> 
+  <span class="dot" onclick="currentSlide(7) ; pause()"></span>
   <br/><br/>
 </div>
 
@@ -206,9 +232,9 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > 6) {
+  if (n > 8) {
     slideIndex = 1; }    
-  if (n < 1) {slideIndex = 5}
+  if (n < 1) {slideIndex = 7}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
@@ -222,6 +248,8 @@ function showSlides(n) {
   if (slideIndex ==4){dots[1].className += " active";}
   if (slideIndex ==5){dots[2].className += " active";}
   if (slideIndex ==6){dots[2].className += " active";}
+  if (slideIndex ==7){dots[3].className += " active";}
+  if (slideIndex ==8){dots[3].className += " active";}
 }
 
 showSlides(slideIndex);
